@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('SonarQube Analysis') {
+        stage('SonarQube Analysis1') {
             steps {
                 script {
                     // Define the path of SonarQube Scanner
