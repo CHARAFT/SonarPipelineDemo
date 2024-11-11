@@ -26,7 +26,8 @@ pipeline {
                             bat """
                                 "${scannerHome}\\bin\\sonar-scanner.bat" ^
                                 -Dsonar.projectKey=team13_project ^
-                                -Dsonar.sources=. ^
+                                -Dsonar.sources=./src ^
+                                -Dsonar.java.binaries=./target/classes ^
                                 -Dsonar.host.url=http://localhost:9000 ^
                                 -Dsonar.login=%SONAR_TOKEN%
                             """
